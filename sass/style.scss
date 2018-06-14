@@ -1,0 +1,88 @@
+$fonts: 'Open Sans', sans-serif;
+$primary-color: #313234;
+$secondary-color: #1A2627;
+$font-color: #FFFFFF;
+$hover-color: #A8A345;
+
+
+* {box-sizing: border-box;}
+
+body {
+	font-family: $fonts;
+	margin: 0 auto;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+section .container {
+	margin: 50px auto;
+	text-align: center;
+}
+header {
+	background-color: $primary-color;
+	height: 50px;
+		img {
+		padding: 10px 0;
+		}
+		ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		float: right;
+		}
+		li {
+  		float: left;
+		}
+		nav:before;
+		nav:after {
+		content: "";
+		display: table;
+		clear: both;
+		}
+		a {
+		line-height: 50px;
+		padding: 0 20px;
+		display: block;
+		color: $font-color;
+		text-decoration: none;
+		text-transform: uppercase;
+		&:hover {
+		color: $hover-color;
+		}
+		}
+}
+.hero {
+  	background-image: url(https://images.unsplash.com/photo-1487180144351-b8472da7d491?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2fb8b0a55fc0a9a390e5ebf78492f154&auto=format&fit=crop&w=1352&q=80);
+  	padding: 150px;
+  	background-color: $secondary-color;
+  	background-repeat: no-repeat;
+  	background-position: center; }
+
+.slogan {
+	background: rgba(255, 255, 255, 0.5);
+	max-width: 800px;
+	float: right;
+	margin-top: -75px;
+	letter-spacing: 5px;
+	word-spacing: 10px; 
+  		h1 {
+    	padding: 10px;
+    	color: $font-color;
+    	text-transform: uppercase; 
+    	}
+}
+.song {
+  	padding: 10px; 
+  		h2 {
+	    text-transform: uppercase;
+	    text-decoration: underline grey;
+	    text-align: center;
+	    font-weight: bold; 
+	    }
+  		p {
+	    padding-bottom: 15px;
+	    text-align: center;
+	    }
+}
